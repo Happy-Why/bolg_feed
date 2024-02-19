@@ -3,8 +3,8 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-#baseURL = "https://Happpy-why.github.io/"
-baseURL = "happy-why.cn/"
+baseURL = "https://Happpy-why.github.io/"
+#baseURL = "happy-why.cn/"
 defaultContentLanguage = "zh-cn"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
