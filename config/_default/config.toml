@@ -4,7 +4,7 @@
 
 theme = "blowfish"
 #baseURL = "https://Happpy-why.github.io/"
-baseURL = "https://happy-why.cn/"
+baseURL = "happy-why.cn/"
 defaultContentLanguage = "zh-cn"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
