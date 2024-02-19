@@ -1,11 +1,10 @@
-theme = "blowfish"
 # -- Site Configuration --
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/getting-started/
 
-# theme = "blowfish"
+theme = "blowfish"
 #baseURL = "https://Happpy-why.github.io/"
-baseURL = "happy-why.cn"
+baseURL = "https://happy-why.cn/"
 defaultContentLanguage = "zh-cn"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles

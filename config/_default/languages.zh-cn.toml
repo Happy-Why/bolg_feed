@@ -1,13 +1,13 @@
 languageCode = "zh-cn"
 languageName = "简体中文"
 weight = 1
-title = "Blowfish"
+title = "可可爱爱"
 
 [params]
   displayName = "ZH-CN"
   isoCode = "zh-cn"
   rtl = false
-  dateFormat = "2 January 2006"
+  dateFormat = "2006-01-02"
   logo = "img/logo.png"
   secondaryLogo = "img/secondary-logo.png"
   description = "欢迎来到小猫战士的博客"
@@ -17,7 +17,7 @@ title = "Blowfish"
    name = "知白守黑"
    image = "img/blowfish_logo.png"
    headline = "I'm only human human human"
-   bio = "A little bit about you about you"
+   bio = "哈哈我也不知道啊"
    links = [
      { email = "mailto:1780006511@qq.com" },
      { link = "https://link-to-some-website.com/" },
