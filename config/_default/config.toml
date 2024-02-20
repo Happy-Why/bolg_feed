@@ -4,13 +4,16 @@
 
 theme = "blowfish"
 baseURL = "https://Happpy-why.github.io/"
-#baseURL = "happy-why.cn/"
 defaultContentLanguage = "zh-cn"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
+
+# 文章列表每页列出的文章数量。
 paginate = 10
+
+# 当前面的内容没有提供时，用于生成文章摘要的字数。值0将使用第一句话。当隐藏摘要时，该值不起作用。
 summaryLength = 0
 
 buildDrafts = false
@@ -26,6 +29,7 @@ buildFuture = false
   category = "categories"
   author = "authors"
   series = "series"
+  topic = "topics"
 
 [sitemap]
   changefreq = 'daily'

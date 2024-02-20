@@ -10,20 +10,23 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+# 右上角菜单栏
 [[main]]
   name = "Blog"
   pageRef = "posts"
-  weight = 10
+  weight = 10 # 权重 菜单顺序
 
-#[[main]]
-#  name = "Parent"
-#  weight = 20
+[[main]]
+  name = "Parent"
+  pageRef = "posts"
+  weight = 20
 
-#[[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+# 带parent的子菜单
+[[main]]
+  name = "example sub-menu 1"
+  parent = "Parent"
+  pageRef = "posts"
+  weight = 20
 
 #[[main]]
 #  name = "example sub-menu 2"
@@ -36,16 +39,27 @@
 #  pageRef = "tags/interesting-topic"
 #  weight = 10
 
+[[main]]
+  pre = "github"  # 图标  https://blowfish.page/samples/icons/ 该网站有图标大全
+  name = "" # 文本
+  url = "https://github.com/Happy-why" # 跳转链接
+  weight = 30
+
 #[[subnavigation]]
 #  name = "My Awesome Category"
 #  pre = "github"
 #  pageRef = "categories/awesome"
 #  weight = 20
 
-#[[main]]
-#  name = "Categories"
-#  pageRef = "categories"
-#  weight = 20
+[[main]]
+  name = "Categories"
+  pageRef = "categories"
+  weight = 20
+
+[[main]]
+  name = "Topics"
+  pageRef = "topics"  # 目前在 taxonomies.toml 中添加主题topic即可点击进入页面
+  weight = 20
 
 #[[main]]
 #  name = "Tags"

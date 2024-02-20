@@ -1,0 +1,2 @@
+# 这将用主题替换默认标签和类别
+#topic = "topics"    # 放在这里，hugo后 会在 public生成topics目录 带 index.html index.xml
