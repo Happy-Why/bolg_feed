@@ -13,7 +13,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-mainSections = ["section1", "section2"]
+mainSections = ["blog"]
 # robots = ""
 
 disableImageZoom = false          # 禁用站点中所有图像的图像缩放功能。
@@ -21,11 +21,11 @@ disableImageOptimization = true  # 禁用网站中所有图像的图像调整大
 disableTextInHeader = false       # 禁用标题中的文本，对于基于徽标的标题很有用。
 
 defaultBackgroundImage = "img/知白守黑.jpg" # used as default for background images
-# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+#defaultFeaturedImage = "img/玉子.jpg" # used as default for featured images in all articles
 
-# highlightCurrentMenuArea = true
-# smartTOC = true
-# smartTOCHideUnfocusedChildren = true
+highlightCurrentMenuArea = true         # 选中后在主菜单中标记菜单项
+smartTOC = true                         # 激活智能目录，视图中的项目将突出显示。
+smartTOCHideUnfocusedChildren = true    # 当智能目录打开时，当表格的更深层次不处于焦点时，这将隐藏它们。
 
 [header]
   layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
@@ -41,71 +41,71 @@ defaultBackgroundImage = "img/知白守黑.jpg" # used as default for background
   layout = "background" # valid options: page, profile, hero, card, background, custom
   #homepageImage = "IMAGE.jpg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 5
-  showMoreLink = false
+  showRecentItems = 6
+  showMoreLink = true
   showMoreLinkDest = "/posts"
-  cardView = true
-  cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  cardView = true              # 将最近的文章显示为卡片库。
+  cardViewScreenWidth = true  # 增强最近文章卡库的宽度以获取可用的完整宽度。
+  layoutBackgroundBlur = false # only used when layout equals background 	使主页布局中的背景图像随着滚动而变得模糊
 
 [article]
   showDate = true
   showViews = true
   showLikes = true
   showComments = true
-  showDateOnlyInArticle = false
-  showDateUpdated = false
+  showDateOnlyInArticle = true     # 即使未显示在文章列表/卡片中，也会在文章中显示日期。
+  showDateUpdated = true          # 是否显示文章的更新日期。
   showAuthor = true
-  showHero = true
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true         # 背景图
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground  文章背景图的样式
 
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = false
-  showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/username/repo/"
-  editAppendPath = true
-  seriesOpened = false
-  showHeadingAnchors = true
-  showPagination = true
-  invertPagination = false
-  showReadingTime = true
-  showTableOfContents = false
-  # showRelatedContent = false
-  # relatedContentLimit = 3
-  showTaxonomies = false
-  showAuthorsBadges = false
-  showWordCount = true
-  # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
-  showZenMode = false
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground 使背景文章heroStyle中的背景图片随着滚动变得模糊
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background 在标题和正文之间添加空间。
+  showBreadcrumbs = false       # 面包屑是否显示在文章标题中。 再试试
+  showDraftLabel = true         # 当网站使用 构建时，草稿指示器是否显示在文章旁边--buildDrafts。
+  showEdit = false              # 是否显示编辑文章内容的链接。
+  # editURL = "https://github.com/username/repo/"   # 当article.showEdit处于活动状态时，编辑链接的 URL。
+  editAppendPath = true         # 当article.showEdit处于活动状态时，当前文章的路径是否应附加到在 处设置的 URL article.editURL。
+  seriesOpened = false          # 系列模块是否默认显示打开。
+  showHeadingAnchors = true     # 标题锚链接是否显示在文章内的标题旁边。
+  showPagination = true         # 文章页脚中是否显示下一篇/上一篇文章链接。
+  invertPagination = false      # 是否翻转下一篇/上一篇文章链接的方向。
+  showReadingTime = true        # 是否显示文章阅读次数。
+  showTableOfContents = true    # 文章中是否显示目录。
+  # showRelatedContent = false  # 显示每个帖子的相关内容。可能需要对您的config.toml.config.toml如果您想启用此功能，请检查主题并复制所有相关条目。
+  # relatedContentLimit = 3  # showRelatedContent如果打开，则显示相关文章的限制。
+  showTaxonomies = false        # 是否显示与本文相关的分类法。
+  showAuthorsBadges = false     #
+  showWordCount = true          # 是否显示文章字数。
+  sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  showZenMode = false           # 标记以激活文章的 Zen 模式阅读功能。  一个可选的隐藏作者简介的小框框
 
 [list]
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true    # 缩略图是否将在每个列表页面中显示为英雄图像。
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = false
-  showCards = false
+  showCards = true
   groupByYear = true
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
-  constrainItemsWidth = false
+  constrainItemsWidth = true
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
   showTermCount = true
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = true
+  showViews = true
+  showLikes = true
   showTableOfContents = false
   cardView = false
 
@@ -134,11 +134,11 @@ defaultBackgroundImage = "img/知白守黑.jpg" # used as default for background
   # domain = "llama.yoursite.com"
 
 [buymeacoffee]
-  # identifier = ""
-  # globalWidget = true
-  # globalWidgetMessage = "Hello"
-  # globalWidgetColor = "#FFDD00"
-  # globalWidgetPosition = "Right"
+#   identifier = ""
+#   globalWidget = true
+#   globalWidgetMessage = "Hello"
+#   globalWidgetColor = "#FFDD00"
+#   globalWidgetPosition = "Right"
 
 [verification]
   # google = ""

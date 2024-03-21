@@ -29,6 +29,7 @@ buildFuture = false
   category = "categories"
   author = "authors"
   series = "series"
+  blog = "blogs"
   topic = "topics"
 
 [sitemap]

@@ -13,20 +13,20 @@
 # 右上角菜单栏
 [[main]]
   name = "Blog"
-  pageRef = "posts"
+  pageRef = "blog"
   weight = 10 # 权重 菜单顺序
 
-[[main]]
-  name = "Parent"
-  pageRef = "posts"
-  weight = 20
+#[[main]]
+#  name = "Parent"
+#  pageRef = "blog"
+#  weight = 20
 
 # 带parent的子菜单
-[[main]]
-  name = "example sub-menu 1"
-  parent = "Parent"
-  pageRef = "posts"
-  weight = 20
+#[[main]]
+#  name = "example sub-menu 1"
+#  parent = "Parent"
+#  pageRef = "blog"
+#  weight = 20
 
 #[[main]]
 #  name = "example sub-menu 2"
@@ -61,10 +61,10 @@
   pageRef = "topics"  # 目前在 taxonomies.toml 中添加主题topic即可点击进入页面
   weight = 20
 
-#[[main]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 10
 
 
 # -- Footer Menu --
